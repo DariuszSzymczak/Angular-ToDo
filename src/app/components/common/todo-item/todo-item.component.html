@@ -1,0 +1,12 @@
+<div class=" col-md-12 itemBox">
+
+    <div class="checkbox_out flexCenter" (click)="onCheck()">
+      <div class="checkbox_in flexCenter">
+        <div class="check" *ngIf="check"></div>
+      </div>
+    </div>
+    <div class="right flexCenter">
+      <div class="line" *ngIf="check"></div>
+      <ng-content></ng-content>
+    </div>
+</div>

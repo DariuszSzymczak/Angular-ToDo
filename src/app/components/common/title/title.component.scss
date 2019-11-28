@@ -1,0 +1,11 @@
+@import "theme";
+h1{
+  display: inline;
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 20px;
+  color: $text-white;
+  letter-spacing: 4px;
+  display: block;
+  height: 30px;
+}

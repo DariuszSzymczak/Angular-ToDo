@@ -1,0 +1,68 @@
+@import "theme";
+ .itemBox{
+   display: block;
+   margin-bottom:10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+ }
+
+.left{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width:20%;
+}
+
+.right{
+  background: $bg-lighter;
+  padding: 10px 0;
+  height: 50px;
+  width:80%;
+  font-size: 17px;
+  box-shadow: 0px 3px 11px 0px $bg-dark;
+}
+.checkbox_out{
+  background: $text-white;
+  width:50px;
+  height: 50px;
+  padding:10px;
+  background: $text-orange;
+  margin-right: 15px;
+  box-shadow: 0px 3px 11px 0px $bg-dark;
+  cursor: pointer;
+  transition: 0.4s linear;
+}
+
+.checkbox_out:hover{
+  background: $text-orange-hover;
+}
+
+
+.checkbox_in{
+  width:30px;
+  height: 30px;
+  padding:10px;
+  border: 2px solid $bg-light;
+}
+
+.check{
+  display: inline-block;
+  padding: 17px 6px;
+  margin: -3px;
+  position: relative;
+  top: -9px;
+  left: 4px;
+  transform: rotate(35deg);
+  border-right: 6px solid #484847;
+  border-bottom: 3px solid #383838;
+
+}
+
+.line{
+  width:80%;
+  height:3px;
+  background: $button-pink;
+  position: absolute;
+}

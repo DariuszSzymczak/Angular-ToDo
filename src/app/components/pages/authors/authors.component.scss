@@ -1,0 +1,10 @@
+@import "theme";
+.item{
+  background: rgb(195,34,93);
+  background: linear-gradient(0deg, rgba(195,34,93,1) 0%, rgba(253,141,45,1) 100%);
+  border:2px solid $button-pink-border;
+  height: 300px;
+  margin:30px;
+  width:300px;
+  font-size: 24px;
+}

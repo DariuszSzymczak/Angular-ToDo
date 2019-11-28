@@ -1,0 +1,17 @@
+@import "theme";
+label{
+  color:white
+}
+input[type="text"] {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 5px 0;
+}
+
+.formRow{
+  margin: 40px 0;
+}
+
+.buttonRow{
+  margin-top:10px;
+}

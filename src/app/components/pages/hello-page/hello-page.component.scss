@@ -1,0 +1,42 @@
+@import "theme";
+img{
+  width:100%;
+}
+.image-row{
+  margin:30px;
+}
+.text-row{
+  border-left:2px solid $border-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  color: $text-white;
+  font-weight: 200;
+}
+
+.btn{
+  width: 100%;
+  padding: 20px 0;
+  font-size: 20px;
+  transition:1s linear;
+}
+
+.btn1{
+  border: 2px solid $button-green-border;
+  background: $button-green;
+}
+.btn2{
+  border: 2px solid $button-pink-border;
+  background: $button-pink;
+}
+.btn1:hover{
+  background: $button-green-hover;
+}
+.btn2:hover{
+  background: $button-pink-hover;
+}
+#buttons{
+  margin-top:50px;
+}

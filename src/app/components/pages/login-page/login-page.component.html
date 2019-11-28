@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <app-title>Logowanie</app-title>
+      <v-line></v-line>
+    </div>
+  </div>
+
+  <div class="row formRow flexCenter">
+    <form [formGroup]="forms" (ngSubmit)="sendLogin()">
+      <div class="row">
+        <div class="col-md-3 flexCenter">
+          <label>Login:</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" formControlName="login" name="login">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 flexCenter">
+          <label>Hasło:</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" formControlName="password" name="login">
+        </div>
+        <div class="col-md-12 buttonRow">
+          <app-wide-button   color="green" routerLink="/todo">Zaloguj!</app-wide-button>
+        </div>
+      </div>
+
+
+    </form>
+  </div>
+
+
+</div>

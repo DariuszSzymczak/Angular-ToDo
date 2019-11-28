@@ -1,0 +1,18 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <app-title>Twoja lista Zadań</app-title>
+      <v-line></v-line>
+    </div>
+  </div>
+
+  <div class="row flexCenter">
+
+    <div class="row  flexCenter todoBox">
+      <app-todo-item class="col-md-12 flexCenter" *ngFor="let item of " [id]="item.id" [check]="item.check" >{{item.text}}</app-todo-item>
+      <app-todo-input class="col-md-12 flexCenter"></app-todo-input>
+    </div>
+
+  </div>
+</div>
+

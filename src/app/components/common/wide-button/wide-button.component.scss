@@ -1,0 +1,22 @@
+@import "theme";
+button{
+  width: 100%;
+  padding: 20px 0;
+  font-size: 20px;
+  transition:1s linear;
+}
+
+.green{
+  border: 2px solid $button-green-border;
+  background: $button-green;
+}
+.pink{
+  border: 2px solid $button-pink-border;
+  background: $button-pink;
+}
+.green:hover{
+  background: $button-green-hover;
+}
+.pink:hover{
+  background: $button-pink-hover;
+}

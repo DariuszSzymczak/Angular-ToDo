@@ -1,0 +1,46 @@
+@import "theme";
+
+nav{
+  background: $bg-light;
+  border-bottom: 2px solid $border-light;
+  height:60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a{
+  color: $text-orange;
+  margin: 20px;
+  font-size: 18px;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: 0.4s ease-in;
+}
+nav a:hover{
+  color: $text-orange-hover;
+}
+
+#right{
+  height:60px;
+  float:right;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.active-link{
+  color: $text-active-link !important;
+}
+#logo{
+  display: inline-block;
+  width: 20px;
+  height: 33px;
+  margin: -3px;
+  transform: rotate(20deg);
+  border-right: 6px solid $text-orange;
+  border-bottom: 3px solid $text-orange;
+}
+
+.title{
+  display: inline-block;
+}
