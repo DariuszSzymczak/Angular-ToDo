@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder} from '@angular/forms';
-import {StoreServiceService} from '../../../store-service.service'
+
 @Component({
   selector: 'app-register-page',
   templateUrl: './register-page.component.html',
@@ -8,7 +8,7 @@ import {StoreServiceService} from '../../../store-service.service'
 })
 export class RegisterPageComponent implements OnInit {
 
-  constructor(private fb: FormBuilder, private store : StoreServiceService) {
+  constructor(private fb: FormBuilder) {
   }
 
   forms = this.fb.group({
@@ -21,9 +21,6 @@ export class RegisterPageComponent implements OnInit {
   }
 
   sendReg() {
-    this.store.add(this.forms.get(['login']).value)
-    this.store.add(this.forms.get(['password']).value)
-    this.store.showList();
   }
 
 }

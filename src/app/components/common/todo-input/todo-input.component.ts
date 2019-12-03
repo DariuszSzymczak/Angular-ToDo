@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {StoreServiceService} from '../../../store-service.service';
+import {TodoService} from '../../../services/todo.service';
 
 @Component({
   selector: 'app-todo-input',
@@ -9,15 +9,14 @@ import {StoreServiceService} from '../../../store-service.service';
 export class TodoInputComponent implements OnInit {
 
   inputText: string;
-  constructor(private store: StoreServiceService) { }
+  constructor(private service: TodoService) { }
 
   ngOnInit() {
   }
 
   add() {
     if (this.inputText != null) {
-      this.store.add(this.inputText);
-      this.store.showList();
+      this.service.add(this.inputText);
     }
   }
 

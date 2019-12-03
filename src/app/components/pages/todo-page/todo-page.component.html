@@ -9,7 +9,7 @@
   <div class="row flexCenter">
 
     <div class="row  flexCenter todoBox">
-      <app-todo-item class="col-md-12 flexCenter" *ngFor="let item of " [id]="item.id" [check]="item.check" >{{item.text}}</app-todo-item>
+      <app-todo-item class="col-md-12 flexCenter" *ngFor="let item of todoList" [id]="item.id" [check]="item.check" >{{item.text}}</app-todo-item>
       <app-todo-input class="col-md-12 flexCenter"></app-todo-input>
     </div>
 
